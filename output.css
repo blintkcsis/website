@@ -757,6 +757,56 @@ video {
   color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-photo-wrapper {
+  border-radius: 9999px;
+  border: 1px solid rgba(82, 82, 82, 0.8);
+  background-color: #0f0f0f;
+  padding: 0.35rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.profile-photo {
+  display: block;
+  border-radius: 9999px;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  background-color: #111;
+}
+
+.profile-card__meta {
+  text-align: center;
+}
+
+.profile-card__note {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: #a3a3a3;
+}
+
+@media (min-width: 640px) {
+  .profile-card {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .profile-photo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .profile-card__meta {
+    text-align: left;
+  }
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
